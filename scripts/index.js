@@ -46,7 +46,7 @@ const filterData = (data) => {
    const filter = (value, parameter) => {
       switch (parameter) {
          case "name":
-            namesResult = data.filter(item => item.name.common.toLowerCase().startsWith(value.toLocaleString()))
+            namesResult = data.filter(item => item.name.common.toLowerCase().startsWith(value.toLowerCase()))
             break
          case "region":
             if (value=="all")
